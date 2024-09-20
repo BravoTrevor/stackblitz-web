@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard with Autocomplete</title>
+    <link rel="stylesheet" href="global_styles.css">
+    <style>
+        /* Autocomplete styling */
+        .autocomplete-items {
+            position: absolute;
+            border: 1px solid #d4d4d4;
+            border-bottom: none;
+            border-top: none;
+            z-index: 99;
+            top: 100%;
+            left: 0;
+            right: 0;
+        }
+        .autocomplete-items div {
+            padding: 10px;
+            cursor: pointer;
+            background-color: #fff;
+            border-bottom: 1px solid #d4d4d4;
+        }
+        .autocomplete-items div:hover {
+            background-color: #e9e9e9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Dashboard</h1>
+        <div class="search-box">
+            <input id="cityInput" type="text" placeholder="Enter city" />
+            <button id="search-btn">Get Weather</button>
+        </div>
+        <div id="weather-result" class="weather-info"></div>
+    </div>
+
+    <!-- Link to the JS file for autocomplete and weather fetching -->
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
